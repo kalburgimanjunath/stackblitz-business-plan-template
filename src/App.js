@@ -146,7 +146,7 @@ export default function App() {
   return (
     <div>
       <div className="row">
-        <div className="col font-bold">Business Plan template</div>
+        <div className="col font-bold underline">Business Plan template</div>
       </div>
       <div className="row">
         <div className="col mr-5">
