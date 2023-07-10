@@ -14,8 +14,8 @@ export default function App() {
   const FormBusinessPlan = () => {
     return (
       <div className="row">
-        <form className="row">
-          <div class="form-group col">
+        <form className="row m-5">
+          <div class="form-group border border-primary p-2 m-2">
             <label for="problemStatement">Problem Statement</label>
             <input
               type="text"
@@ -27,7 +27,7 @@ export default function App() {
               placeholder="Enter Problem Statement"
             />
           </div>
-          <div class="form-group col">
+          <div class="form-group border border-primary p-2 m-2">
             <label for="proposedStatement">Proposed Solution</label>
             <input
               type="text"
@@ -38,7 +38,7 @@ export default function App() {
               placeholder="Proposed Solution"
             />
           </div>
-          <div class="form-group col">
+          <div class="form-group border border-primary p-2 m-2">
             <label for="existingAlternatives">Existing Alternatives</label>
             <input
               type="text"
@@ -50,7 +50,7 @@ export default function App() {
             />
           </div>
 
-          <div class="form-group col">
+          <div class="form-group border border-primary p-2 m-2">
             <label for="uniqueValue">Unique Value Proposition</label>
             <input
               type="text"
@@ -61,7 +61,7 @@ export default function App() {
               placeholder="Unique Value Proposition"
             />
           </div>
-          <div class="form-group col">
+          <div class="form-group border border-primary p-2 m-2">
             <label for="webmatrices">Web Matrices/Analysis</label>
             <input
               type="text"
@@ -72,7 +72,7 @@ export default function App() {
               placeholder="Web Matrices"
             />
           </div>
-          <div class="form-group col">
+          <div class="form-group border border-primary p-2 m-2">
             <label for="earlyAdaptors">Early Adaptors</label>
             <input
               type="text"
@@ -83,7 +83,7 @@ export default function App() {
               placeholder="Early Adaptors"
             />
           </div>
-          <div class="form-group col">
+          <div class="form-group border border-primary p-2 m-2">
             <label for="marketingSegment">Marketing Segment</label>
             <input
               type="text"
@@ -95,7 +95,7 @@ export default function App() {
             />
           </div>
 
-          <div class="form-group col">
+          <div class="form-group border border-primary p-2 m-2">
             <label for="costMatrix">Cost Matrix</label>
             <input
               type="text"
@@ -106,7 +106,7 @@ export default function App() {
               placeholder="Cost Matrix"
             />
           </div>
-          <div class="form-group col">
+          <div class="form-group border border-primary p-2 m-2">
             <label for="revenueMatrix">Revenue Matrix</label>
             <input
               type="text"
@@ -145,9 +145,17 @@ export default function App() {
   };
   return (
     <div>
-      <h1>Business Plan template</h1>
-      <FormBusinessPlan />
-      <Preview />
+      <div className="row">
+        <div className="col font-bold">Business Plan template</div>
+      </div>
+      <div className="row">
+        <div className="col mr-5">
+          <FormBusinessPlan />
+        </div>
+        <div className="col ml-5">
+          <Preview />
+        </div>
+      </div>
     </div>
   );
 }
