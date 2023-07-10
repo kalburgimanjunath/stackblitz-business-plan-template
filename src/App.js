@@ -34,6 +34,7 @@ export default function App() {
               class="form-control"
               id="proposedStatement"
               value={proposedStatement}
+              onChange={(e) => setProposedStatement(e.target.value)}
               placeholder="Proposed Solution"
             />
           </div>
@@ -44,6 +45,7 @@ export default function App() {
               class="form-control"
               id="existingAlternatives"
               value={existingAlternatives}
+              onChange={(e) => setExistingAlternatives(e.target.value)}
               placeholder="Existing Alternatives"
             />
           </div>
@@ -55,6 +57,7 @@ export default function App() {
               class="form-control"
               id="uniqueValue"
               value={uniqueValue}
+              onChange={(e) => setUniqueValue(e.target.value)}
               placeholder="Unique Value Proposition"
             />
           </div>
@@ -64,6 +67,7 @@ export default function App() {
               type="text"
               class="form-control"
               id="webmatrices"
+              onChange={(e) => setWebMatrices(e.target.value)}
               value={webmatrices}
               placeholder="Web Matrices"
             />
@@ -75,6 +79,7 @@ export default function App() {
               class="form-control"
               id="earlyAdaptors"
               value={earlyAdaptors}
+              onChange={(e) => setEarlyAdaptors(e.target.value)}
               placeholder="Early Adaptors"
             />
           </div>
@@ -84,6 +89,7 @@ export default function App() {
               type="text"
               class="form-control"
               id="marketingSegment"
+              onChange={(e) => setMarketingSegment(e.target.value)}
               value={marketingSegment}
               placeholder="Marketing Segment"
             />
@@ -95,6 +101,7 @@ export default function App() {
               type="text"
               class="form-control"
               id="costMatrix"
+              onChange={(e) => setCostMatrix(e.target.value)}
               value={costMatrix}
               placeholder="Cost Matrix"
             />
@@ -104,6 +111,7 @@ export default function App() {
             <input
               type="text"
               class="form-control"
+              onChange={(e) => setRevenueMatrix(e.target.value)}
               id="revenueMatrix"
               placeholder="Revenue Matrix"
             />
