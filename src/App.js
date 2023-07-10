@@ -129,9 +129,9 @@ export default function App() {
       <div className="row">
         <div className="col">{problemStatement}</div>
         <div className="col">
-          <div class="row">
-            <div class="row">{proposedStatement}</div>
-            <div class="row">{existingAlternatives}</div>
+          <div className="row">
+            <div className="row">{proposedStatement}</div>
+            <div className="row">{existingAlternatives}</div>
           </div>
         </div>
         <div className="col">{uniqueValue}</div>
