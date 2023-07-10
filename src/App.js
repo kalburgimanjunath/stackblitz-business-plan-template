@@ -15,11 +15,11 @@ export default function App() {
     return (
       <div className="row">
         <form className="row m-5">
-          <div class="form-group border border-primary p-2 m-2">
-            <label for="problemStatement">Problem Statement</label>
+          <div className="form-group border border-primary p-2 m-2">
+            <label htmlFor="problemStatement">Problem Statement</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="problemStatement"
               value={problemStatement}
               onChange={(e) => setProblemStatement(e.target.value)}
@@ -27,22 +27,22 @@ export default function App() {
               placeholder="Enter Problem Statement"
             />
           </div>
-          <div class="form-group border border-primary p-2 m-2">
+          <div className="form-group border border-primary p-2 m-2">
             <label for="proposedStatement">Proposed Solution</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="proposedStatement"
               value={proposedStatement}
               onChange={(e) => setProposedStatement(e.target.value)}
               placeholder="Proposed Solution"
             />
           </div>
-          <div class="form-group border border-primary p-2 m-2">
+          <div className="form-group border border-primary p-2 m-2">
             <label for="existingAlternatives">Existing Alternatives</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="existingAlternatives"
               value={existingAlternatives}
               onChange={(e) => setExistingAlternatives(e.target.value)}
@@ -50,44 +50,44 @@ export default function App() {
             />
           </div>
 
-          <div class="form-group border border-primary p-2 m-2">
+          <div className="form-group border border-primary p-2 m-2">
             <label for="uniqueValue">Unique Value Proposition</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="uniqueValue"
               value={uniqueValue}
               onChange={(e) => setUniqueValue(e.target.value)}
               placeholder="Unique Value Proposition"
             />
           </div>
-          <div class="form-group border border-primary p-2 m-2">
+          <div className="form-group border border-primary p-2 m-2">
             <label for="webmatrices">Web Matrices/Analysis</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="webmatrices"
               onChange={(e) => setWebMatrices(e.target.value)}
               value={webmatrices}
               placeholder="Web Matrices"
             />
           </div>
-          <div class="form-group border border-primary p-2 m-2">
+          <div className="form-group border border-primary p-2 m-2">
             <label for="earlyAdaptors">Early Adaptors</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="earlyAdaptors"
               value={earlyAdaptors}
               onChange={(e) => setEarlyAdaptors(e.target.value)}
               placeholder="Early Adaptors"
             />
           </div>
-          <div class="form-group border border-primary p-2 m-2">
+          <div className="form-group border border-primary p-2 m-2">
             <label for="marketingSegment">Marketing Segment</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="marketingSegment"
               onChange={(e) => setMarketingSegment(e.target.value)}
               value={marketingSegment}
@@ -95,29 +95,29 @@ export default function App() {
             />
           </div>
 
-          <div class="form-group border border-primary p-2 m-2">
+          <div className="form-group border border-primary p-2 m-2">
             <label for="costMatrix">Cost Matrix</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="costMatrix"
               onChange={(e) => setCostMatrix(e.target.value)}
               value={costMatrix}
               placeholder="Cost Matrix"
             />
           </div>
-          <div class="form-group border border-primary p-2 m-2">
+          <div className="form-group border border-primary p-2 m-2">
             <label for="revenueMatrix">Revenue Matrix</label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               onChange={(e) => setRevenueMatrix(e.target.value)}
               id="revenueMatrix"
               placeholder="Revenue Matrix"
             />
           </div>
 
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
             Submit
           </button>
         </form>
